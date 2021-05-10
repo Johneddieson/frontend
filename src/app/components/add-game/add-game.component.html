@@ -1,0 +1,28 @@
+<app-navigation></app-navigation>
+<br>
+<br>
+<mat-form-field appearance="fill">
+    <mat-label>Title</mat-label>
+    <input [(ngModel)]="game.title" matInput>
+  </mat-form-field>
+  <br>
+  <br>
+ 
+  <mat-form-field appearance="fill">
+    <mat-label>Description</mat-label>
+    <textarea [(ngModel)]="game.description" matInput></textarea>
+  </mat-form-field>
+
+  <br>
+<br>
+<mat-form-field appearance="fill">
+    <mat-label>Image</mat-label>
+    <input [(ngModel)]="game.image" matInput>
+  </mat-form-field>
+
+  <br>
+  <br>
+  <div class="example-button-row">
+   <button (click)="saveGame()" mat-raised-button color="accent">Save</button>
+   
+  </div>
